@@ -35,6 +35,8 @@ The pattern is not a specific piece of code, but a general `concept/strategy` fo
 * https://sourcemaking.com/design_patterns
 * https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm
 * https://www.freecodecamp.org/news/the-basic-design-patterns-all-developers-need-to-know/
+* https://www.script-tutorials.com/design-patterns-in-php/
+* https://www.packtpub.com/product/laravel-design-patterns-and-best-practices/9781783287987
 
 # laravel
 

@@ -3,6 +3,10 @@
 * template is a fixed preset format.
 
 
+~ sublcass / super class
+
+* https://stackoverflow.com/questions/5863682/what-is-a-subclass
+
 # resources
 
 * [webdevetc](https://webdevetc.com/blog/template-method-design-pattern-explained-php/)

@@ -1,6 +1,6 @@
 # state pattern
 
-* middleware ( handler->handler->handler)
+* 
 
 
 # resources
