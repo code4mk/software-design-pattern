@@ -4,6 +4,7 @@
 * [thinktocode](https://www.thinktocode.com/2017/10/10/solid-principles-in-php/)
 * [laracasts](https://laracasts.com/series/solid-principles-in-php)
 * [evrtrabajo](https://dev.to/evrtrabajo/solid-in-php-d8e)
+* [youtube](https://www.youtube.com/watch?v=rtmFCcjEgEw)
 
 # open / close
 
