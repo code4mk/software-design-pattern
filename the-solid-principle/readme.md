@@ -1,3 +1,6 @@
+
+* [successivetech](https://medium.com/successivetech/s-o-l-i-d-the-first-5-principles-of-object-oriented-design-with-php-b6d2742c90d7) 
+
 # open / close
 
 open for extention and close for modification or change.
@@ -20,8 +23,16 @@ open for extention and close for modification or change.
 
 * [tutsplus](https://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074)
 
+# Liskov substitution
+
+* [dev.to](https://dev.to/erikwhiting88/liskov-substitution-principle-in-3-minutes-2dc6)
+* [codeburst](https://codeburst.io/the-liskov-substitution-principle-5ba387055a2a#:~:text=The%20Liskov%20Substitution%20Principle%20states,parent%20without%20any%20unexpected%20behaviour.&text=One%20rule%20that%20should%20be,as%20that%20of%20its%20parent.)
+* [successivetech](https://medium.com/successivetech/s-o-l-i-d-the-first-5-principles-of-object-oriented-design-with-php-b6d2742c90d7)
+
 
 
 # code smell //
+
+~ bad smell / bad practise
 
 * https://hackernoon.com/5-easy-wins-to-refactor-even-the-worst-legacy-code-7vuc3069
