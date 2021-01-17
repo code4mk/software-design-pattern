@@ -5,6 +5,8 @@
 * [laracasts](https://laracasts.com/series/solid-principles-in-php)
 * [evrtrabajo](https://dev.to/evrtrabajo/solid-in-php-d8e)
 * [youtube](https://www.youtube.com/watch?v=rtmFCcjEgEw)
+* [youtube laracon](https://www.youtube.com/watch?v=NeXQEJNWO5w)
+* [katerina's slide](https://www.slideshare.net/KaterinaTrajchevska/from-good-to-solid-how-to-become-a-better-developer)
 
 # open / close
 
