@@ -10,6 +10,10 @@ Factory design pattern works like a factory in the real world in that it creates
 * abtract factory
 * factory method
 
+~ simple factory
+
+![](factory-pattern-simple.png)
+
 
 # resources
 * https://gist.github.com/oktapodi/6ea734dbb945b69f9fcc `simple factory`

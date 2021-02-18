@@ -55,3 +55,5 @@ $ob2 = ConnectDb::getInstance();
 * https://www.youtube.com/watch?v=qWaFiOGwU-8
 * https://www.geeksforgeeks.org/singleton-design-pattern-introduction/#:~:text=It%20is%20used%20where%20only,and%20thread%20pool%2C%20database%20connections.
 * [laravel framework container](https://github.com/laravel/framework/blob/8.x/src/Illuminate/Container/Container.php#L1315)
+* https://dzone.com/articles/singleton-anti-pattern
+* https://phpenthusiast.com/blog/the-singleton-design-pattern-in-php
