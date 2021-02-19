@@ -1,6 +1,7 @@
 # Decorator design pattern
 
-* extending funtionalities.
+* We use the decorator design pattern to add new optional features to our code without changing the existing classes
+
 
 ```php
 interface FoodItem
@@ -50,3 +51,4 @@ $pc->cost(); // 5.25
 
 * https://sourcemaking.com/design_patterns/decorator/php
 * https://medium.com/@sirajul.anik/understanding-decorator-pattern-with-php-implementation-7f536e742bb0
+* https://phpenthusiast.com/blog/the-decorator-design-pattern-in-php-explained
