@@ -41,9 +41,6 @@ $shareObj->share('https://myBlog.com/post-awsome','My greatest post','Read my gr
 ```
 # resources
 
-
 * https://designpatternsphp.readthedocs.io/en/latest/Structural/Facade/README.html
 * https://dev.to/ahmedash95/design-patterns-in-php-facade-with-laravel-j24 ***
-
-
 * https://phpenthusiast.com/blog/simplify-your-php-code-with-facade-class
