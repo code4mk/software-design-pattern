@@ -3,7 +3,6 @@
 * convert one to another.
 
 ```php
-<?php
 class SampleBook
 {
     private $author;
@@ -40,7 +39,7 @@ class BookAdapter
     }
 }
 
-$book = new SampleBook('kamal',' easy design design');
+$book = new SampleBook('kamal',' easy design pattern');
 $bookAdapter =  new BookAdapter($book);
 
 print_r($bookAdapter->getAuthorTitle());
