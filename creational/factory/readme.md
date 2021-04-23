@@ -57,6 +57,11 @@ $DB = $dbFactory->makeDB("host", "db", "user", "pwd");
 abstract class Employee
 {
   abstract public function info();
+
+  public function getName()
+  {
+    return 'name: ' .  $this->info()->name();
+  }
 }
 
 class HrInfo
@@ -76,7 +81,7 @@ class Hr extends Employee
 }
 
 $hr = new Hr();
-print_r($hr->info()->name());
+print_r($hr->getName());
 // kamal
 ```
 
