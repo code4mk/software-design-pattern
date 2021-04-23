@@ -22,9 +22,9 @@ The pattern is not a specific piece of code, but a general `concept/strategy` fo
 
 # Categories of design pattern
 
-* Creational
-* Structural
-* Behavioral
+* [Creational](https://github.com/code4mk/software-design-pattern/tree/main/creational)
+* [Structural](https://github.com/code4mk/software-design-pattern/tree/main/structural)
+* [Behavioral](https://github.com/code4mk/software-design-pattern/tree/main/behavioral)
 
 ~ According to Gang of four's - 23 type of design patterns.
 
