@@ -56,6 +56,10 @@ $obj2 =  ConnectDB::getInstance();
 * cache
 * configure file
 
+# image
+
+![singleton pattern](singleton-pattern.png)
+
 # resources
 
 * https://www.codeproject.com/Articles/852232/PHP-Singleton-Pattern-A-Step-by-Step-And-Problem-s
