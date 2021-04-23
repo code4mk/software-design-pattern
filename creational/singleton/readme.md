@@ -24,21 +24,28 @@ Singleton design pattern create a single object of a class.
 
 
 ```php
-class ConnectDb
+<?php
+class ConnectDB
 {
-    private static $instance;
+  private static $instance;
 
-    public static function getInstance()
-    {
-        if (self::$instance == null) {
-            self::$instance = new ConnectDb();
-        }
-        return self::$instance;
-    }    
+  private function __construct()
+  {
+    // your db connection code
+    echo "your db code";
+  }
+
+  public static function getInstance()
+  {
+    if (self::$instance == null) {
+      self::$instance = new ConnectDB();
+    }
+    return self::$instance;
+  }
 }
-
-$obj = ConnectDb::getInstance();
-$ob2 = ConnectDb::getInstance();
+$obj1 =  ConnectDB::getInstance();
+$obj2 =  ConnectDB::getInstance();
+//return -> your db code
 ```
 
 # when use singleton pattern
