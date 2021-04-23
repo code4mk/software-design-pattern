@@ -1,0 +1,2 @@
+# prototype
+* clone a object
