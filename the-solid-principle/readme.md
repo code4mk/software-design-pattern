@@ -8,12 +8,63 @@
 * [youtube laracon](https://www.youtube.com/watch?v=NeXQEJNWO5w)
 * [katerina's slide](https://www.slideshare.net/KaterinaTrajchevska/from-good-to-solid-how-to-become-a-better-developer)
 
-# open / close
+# Open/Closed principle
 
-open for extention and close for modification or change.
+the Open/Closed Principle (OCP) is a design principle in object-oriented programming that states that a class or module should be open for extension but closed for modification. In other words, you should be able to extend the behavior of a class without modifying its source code.
 
-* [open/close](https://stackify.com/solid-design-open-closed-principle/)
-* [solid](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
+Here is a PHP example of a class that violates the Open/Closed Principle:
+
+```php
+class PaymentProcessor {
+  public function pay($amount, $paymentMethod) {
+    if ($paymentMethod == 'credit_card') {
+      // Process credit card payment
+    } else if ($paymentMethod == 'paypal') {
+      // Process PayPal payment
+    } else if ($paymentMethod == 'bitcoin') {
+      // Process Bitcoin payment
+    } else {
+      throw new Exception('Invalid payment method');
+    }
+  }
+}
+```
+
+In this example, the PaymentProcessor class has a pay method that accepts an amount and a payment method as parameters. The method then checks the payment method and processes the payment accordingly. However, if a new payment method is added, the class would need to be modified to handle it, which violates the OCP.
+
+A better approach would be to create a separate class for each payment method, and to make them implement a common interface, like this:
+
+```php
+interface PaymentMethod {
+  public function processPayment($amount);
+}
+
+class CreditCardPayment implements PaymentMethod {
+  public function processPayment($amount) {
+    // Process credit card payment
+  }
+}
+
+class PayPalPayment implements PaymentMethod {
+  public function processPayment($amount) {
+    // Process PayPal payment
+  }
+}
+
+class BitcoinPayment implements PaymentMethod {
+  public function processPayment($amount) {
+    // Process Bitcoin payment
+  }
+}
+
+class PaymentProcessor {
+  public function pay($amount, PaymentMethod $paymentMethod) {
+    $paymentMethod->processPayment($amount);
+  }
+}
+```
+
+This way, the `PaymentProcessor` class is open for extension, as new payment methods can be added by creating new classes that implement the `PaymentMethod` interface, without modifying the `PaymentProcessor` class. This promotes better code organization, reduces coupling, and makes the code more flexible and maintainable.
 
 # Dependency Inversion
 
