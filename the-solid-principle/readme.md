@@ -21,11 +21,6 @@ open for extention and close for modification or change.
 * [stackify](https://stackify.com/dependency-inversion-principle/#:~:text=Definition%20of%20the%20Dependency%20Inversion%20Principle&text=To%20achieve%20that%2C%20you%20need,level%20modules%20from%20each%20other.&text=Both%20should%20depend%20on%20abstractions,Details%20should%20depend%20on%20abstractions.)
 
 
-# Interface Segragation
-
-* separate the Interface (split small parts)
-* [reflectoring](https://reflectoring.io/interface-segregation-principle/)
-
 # Single resposilibity
 
 Single Responsibility Principle (SRP) is a design principle in object-oriented programming that states that a class should have only one reason to change, i.e., it should have only one responsibility or job.
@@ -143,6 +138,58 @@ printArea($square); // Output: The area is: 25
 
 In this example, the `Rectangle` and `Square` classes implement the Shape interface, which has a `area()` method. The `printArea()` function takes a Shape object as a parameter and calls its `area()` method to calculate and print the area. Both `Rectangle` and `Square` classes can be used interchangeably with the `Shape` interface, demonstrating the Liskov Substitution Principle.
 
+# Interface Segragation
+
+Interface Segregation Principle (ISP) is a design principle in object-oriented programming that states that a class should not be forced to implement interfaces it does not use. In other words, it is better to have several small and focused interfaces rather than a single large and generic interface.
+
+```php
+interface Machine {
+  public function print();
+  public function scan();
+  public function fax();
+}
+
+class AllInOnePrinter implements Machine {
+  public function print() {
+    // Print the document
+  }
+
+  public function scan() {
+    // Scan the document
+  }
+
+  public function fax() {
+    // Fax the document
+  }
+}
+```
+
+split the interface 
+
+```php
+interface Printer {
+  public function print();
+}
+
+interface Scanner {
+  public function scan();
+}
+
+interface Fax {
+  public function fax();
+}
+
+class AllInOnePrinter implements Printer, Scanner {
+  public function print() {
+    // Print the document
+  }
+
+  public function scan() {
+    // Scan the document
+  }
+}
+
+```
 # code smell //
 
 ~ bad smell / bad practise
