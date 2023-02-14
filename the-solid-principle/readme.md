@@ -32,11 +32,62 @@ open for extention and close for modification or change.
 
 # Liskov substitution
 
-* [dev.to](https://dev.to/erikwhiting88/liskov-substitution-principle-in-3-minutes-2dc6)
-* [codeburst](https://codeburst.io/the-liskov-substitution-principle-5ba387055a2a#:~:text=The%20Liskov%20Substitution%20Principle%20states,parent%20without%20any%20unexpected%20behaviour.&text=One%20rule%20that%20should%20be,as%20that%20of%20its%20parent.)
-* [successivetech](https://medium.com/successivetech/s-o-l-i-d-the-first-5-principles-of-object-oriented-design-with-php-b6d2742c90d7)
+The Liskov Substitution Principle (LSP) is one of the SOLID principles that states that objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program. In other words, a subclass should be able to be used in place of its parent class without any unexpected behavior.
 
+example: php
 
+```php
+<?php
+
+interface Shape {
+  public function area();
+}
+
+class Rectangle implements Shape {
+  protected $width;
+  protected $height;
+  
+  public function setWidth($width) {
+    $this->width = $width;
+  }
+  
+  public function setHeight($height) {
+    $this->height = $height;
+  }
+  
+  public function area() {
+    return $this->width * $this->height;
+  }
+}
+
+class Square implements Shape {
+  protected $side;
+  
+  public function setSide($side) {
+    $this->side = $side;
+  }
+  
+  public function area() {
+    return $this->side * $this->side;
+  }
+}
+
+function printArea(Shape $shape) {
+  echo "The area is: " . $shape->area() . "\n";
+}
+
+$rectangle = new Rectangle();
+$rectangle->setWidth(5);
+$rectangle->setHeight(10);
+printArea($rectangle); // Output: The area is: 50
+
+$square = new Square();
+$square->setSide(5);
+printArea($square); // Output: The area is: 25
+
+```
+
+In this example, the `Rectangle` and `Square` classes implement the Shape interface, which has a `area()` method. The `printArea()` function takes a Shape object as a parameter and calls its `area()` method to calculate and print the area. Both `Rectangle` and `Square` classes can be used interchangeably with the `Shape` interface, demonstrating the Liskov Substitution Principle.
 
 # code smell //
 
