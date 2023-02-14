@@ -1,3 +1,13 @@
+SOLID is an acronym that represents a set of principles for writing maintainable and scalable software. These principles were first introduced by Robert C. Martin (also known as Uncle Bob) in his 2000 paper, "Design Principles and Design Patterns." Here is a brief explanation of each of the SOLID principles:
+
+1. [Single Responsibility Principle (SRP)](https://github.com/code4mk/software-design-pattern/tree/main/the-solid-principle#single-resposilibity)
+2. [Open-Closed Principle (OCP)](https://github.com/code4mk/software-design-pattern/tree/main/the-solid-principle#openclosed-principle)
+3. [Liskov Substitution Principle (LSP)](https://github.com/code4mk/software-design-pattern/tree/main/the-solid-principle#liskov-substitution)
+4. [Interface Segregation Principle (ISP)](https://github.com/code4mk/software-design-pattern/tree/main/the-solid-principle#interface-segragation)
+5. [Dependency Inversion Principle (DIP)](https://github.com/code4mk/software-design-pattern/tree/main/the-solid-principle#dependency-inversion)
+
+By following these principles, developers can write software that is easier to maintain, extend, and test. The SOLID principles are widely used in object-oriented programming, and they form the foundation for many design patterns and best practices.
+
 # Single resposilibity
 
 Single Responsibility Principle (SRP) is a design principle in object-oriented programming that states that a class should have only one reason to change, i.e., it should have only one responsibility or job.
